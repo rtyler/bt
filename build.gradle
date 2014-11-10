@@ -12,6 +12,7 @@ import com.github.jrubygradle.JRubyExec
 
 dependencies {
     jrubyExec 'rubygems:colorize:0.7.3+'
+    jrubyExec 'rubygems:flickr.rb:1.2.1+'
 }
 
 task ticker(type: JRubyExec) {
