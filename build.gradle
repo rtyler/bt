@@ -13,10 +13,13 @@ import com.github.jrubygradle.JRubyExec
 dependencies {
     jrubyExec 'rubygems:colorize:0.7.3+'
     jrubyExec 'rubygems:flickr.rb:1.2.1+'
+    jrubyExec 'rubygems:pry:0.10.1+'
 }
 
+
 task ticker(type: JRubyExec) {
-    script 'bt'
+    standardInput System.in
+    script 'bt.rb'
 }
 
 // vim: ft=groovy
