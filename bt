@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$CLASSPATH << '/usr/local/share/java/classes/swt.jar'
+
+require 'java'
+require 'rubygems'
+require 'colorize'
+
+
+puts 'Starting bt'.green
+
+
+

@@ -1,0 +1,21 @@
+buildscript {
+    repositories { jcenter() }
+    dependencies {
+        // Needed to define JRubyExec tasks
+        classpath 'com.github.jruby-gradle:jruby-gradle-plugin:0.1.5+'
+    }
+}
+
+apply plugin: 'com.github.jruby-gradle.base'
+
+import com.github.jrubygradle.JRubyExec
+
+dependencies {
+    jrubyExec 'rubygems:colorize:0.7.3+'
+}
+
+task ticker(type: JRubyExec) {
+    script 'bt'
+}
+
+// vim: ft=groovy
