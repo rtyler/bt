@@ -1,0 +1,5 @@
+# BT
+
+### Running
+
+`./gradlew ticker`
